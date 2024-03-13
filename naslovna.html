@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pajin Salaš - Rezervacije</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFFF99;
+    }
+
+    header {
+      background-color: green;
+      color: #FFFF99;
+      padding: 10px 15px;
+      text-align: center;
+      position: centar;
+    }
+
+   
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    main {
+      text-align: left;
+      padding: 30px;
+      font-size: 20;
+
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    #cta-button {
+      display: inline-block;
+      background-color: #ffa41b;
+      color: #1d2b53;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    #cta-button:hover {
+      background-color: #ffc547;
+    }
+
+    #reservation-form {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    #reservation-form img {
+      max-width: 200px;
+      border-radius: 5px;
+    }
+
+    #reservation-form form {
+      max-width: 400px;
+      text-align: left;
+    }
+
+    #reservation-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    #reservation-form button {
+      background-color: #ffa41b;
+      color: #1d2b53;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    #reservation-form button:hover {
+      background-color: #ffc547;
+    }
+
+    footer {
+      background-color: green;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #social-icons {
+      margin-top: 20px;
+    }
+
+    #social-icons img {
+      max-width: 40px;
+      margin-right: 10px;
+
+    }
+
+    ul {
+    text-align: center;
+    padding: 0; /* Uklanja podrazumevano unutrašnje razmake za <ul> */
+  }
+
+  li {
+    display: inline-block; /* Da bi se stavili u red i omogućilo centriranje */
+    margin-right: 20px; /* Razmak između stavki (prilagodite po potrebi) */
+  }
+
+  li:last-child {
+    margin-right: 0; /* Uklanja razmak nakon poslednje stavke */
+  }
+ 
+  #gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gallery-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Dodajte željeni razmak između slika */
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pajin Salaš</h1>
+    <nav>
+      <ul>
+        <li><a href="naslovna.html">Naslovna</a></li>
+        <li><a href="restoran.html">Restoran</a></li>
+       
+        <li><a href="meni.html">Meni</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align: center;">Dobrodošli na Pajin Salaš</h1>
+    <p>Osetite duh sela na putu - dobrodošli na Pajin Salaš, autentično seosko utočište smešteno duž međunarodnog puta. Pored bogate tradicije i ukusne hrane, naš salaš nudi i različite dodatne atrakcije. Uživajte u sezonskim specijalitetima pripremljenim od lokalnih proizvoda ili se opustite u udobnosti naših bungalova.</p>
+    <p>Svakog vikenda organizujemo tamburaške svirke koje dodatno upotpunjuju atmosferu tradicionalne zabave. Pajin Salaš je takođe savršeno mesto za proslave - od rođendana do venčanja, naša porodična atmosfera čini svaki trenutak posebnim. Ne zaboravite rezervisati svoje mesto i doživeti autentičnu srpsku gostoljubivost!</p>
+    <p>Ukoliko želite produžiti vaš boravak, nudimo udobne smeštajne jedinice sa prelepim pogledom na prirodu. Prolaznici takođe mogu svratiti tokom radnog vremena bez rezervacije. Radimo svakodnevno i tu smo da vaš boravak učinimo nezaboravnim iskustvom.</p>
+
+    <div id="gallery">
+      <img class="gallery-image" src="logopajinsalas.jpg" alt="Slika 1" width="500" height="400">
+      <img class="gallery-image" src="pajinsalasulaz.jpg" alt="Slika 2" width="500" height="400">
+      <img class="gallery-image" src="pajin-salas-11.jpg" alt="Slika 3" width="500" height="400">
+    </div>
+    
+    
+  </main>
+
+  <footer>
+    <h2>Radno vreme</h2>
+    <p>Radnim danima: 9:00 - 22:00</p>
+    <p>Vikendom: 9:00 - 23:00</p>
+    <h2>Kontakt</h2>
+    <p>Telefon: 0641305870</p>
+    <p>Email: <a href="mailto:pajinsalas@gmail.com">pajinsalas@gmail.com</a></p>
+    <div id="social-icons">
+      <a href="https://www.instagram.com/pajinsalas/" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100009583553617" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+  </footer>
+
+</body>
+
+</html>

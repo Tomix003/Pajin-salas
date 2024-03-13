@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pajin Salaš - Rezervacije</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFFF99;
+    }
+
+    header {
+      background-color: green;
+      color: #FFFF99;
+      padding: 10px 15px;
+      text-align: center;
+      position: centar;
+    }
+
+   
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    main {
+      text-align: left;
+      padding: 30px;
+      font-size: 20;
+
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    #cta-button {
+      display: inline-block;
+      background-color: #ffa41b;
+      color: #1d2b53;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    #cta-button:hover {
+      background-color: #ffc547;
+    }
+
+    #reservation-form {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+
+    #reservation-form img {
+      max-width: 200px;
+      border-radius: 5px;
+    }
+
+    #reservation-form form {
+      max-width: 400px;
+      text-align: left;
+    }
+
+    #reservation-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    #reservation-form button {
+      background-color: #ffa41b;
+      color: #1d2b53;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    #reservation-form button:hover {
+      background-color: #ffc547;
+    }
+
+    footer {
+      background-color: green;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #social-icons {
+      margin-top: 20px;
+    }
+
+    #social-icons img {
+      max-width: 40px;
+      margin-right: 10px;
+
+    }
+
+    ul {
+    text-align: center;
+    padding: 0; /* Uklanja podrazumevano unutrašnje razmake za <ul> */
+  }
+
+  li {
+    display: inline-block; /* Da bi se stavili u red i omogućilo centriranje */
+    margin-right: 20px; /* Razmak između stavki (prilagodite po potrebi) */
+  }
+
+  li:last-child {
+    margin-right: 0; /* Uklanja razmak nakon poslednje stavke */
+  }
+ 
+  #gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .gallery-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px; /* Dodajte željeni razmak između slika */
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pajin Salaš</h1>
+    <nav>
+      <ul>
+        <li><a href="naslovna.html">Naslovna</a></li>
+        <li><a href="restoran.html">Restoran</a></li>
+       
+        <li><a href="meni.html">Meni</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Meni</h1>
+
+    <h2>Doručak</h2>
+    <p>Jaje na oko</p>
+    <p>Omlet sa šunkom</p>
+    <p>Omlet sa sirom</p>
+    <p>Omlet sa slaninom</p>
+
+    <h2>Hladna predjela</h2>
+    <p>Domaća šunka</p>
+    <p>Kulen</p>
+    <p>Kobasica domaća</p>
+    <p>Koziji sir sa mirođijom</p>
+    <p>Koziji sir sa lešnikom</p>
+    <p>Mladi kravlji sir</p>
+    <p>Kajmak</p>
+    <p>Ujkino predjelo</p>
+
+    <h2>Topla predjela</h2>
+    <p>Proja</p>
+    <p>Pileće rolnice</p>
+    <p>Biftek rolnice</p>
+    <p>Šampinjoni na žaru</p>
+
+    <h2>Supe i čorbe</h2>
+    <p>Domaca supa</p>
+    <p>Teleća čorba</p>
+    <p>Paradajz čorba</p>
+
+    <h2>Kuvana jela</h2>
+    <p>Juneci gulaš sa njokama</p>
+    <p>Salarski gulaš</p>
+    <p>Muckalica</p>
+    <p>Sarmice u zelju</p>
+    <p>Ćufte u sosu</p>
+    <p>Sarma</p>
+
+    <h2>Glavna jela</h2>
+    <p>Dimljena butkica u sosu</p>
+    <p>Svinjski file u sosu</p>
+    <p>Teleći sač</p>
+    <p>Jagnjeći sač</p>
+    <p>Ćuretina u gorgonzola sosu</p>
+    <p>Ćuretina sa mlincima</p>
+    <p>Pačija prsa u sosu</p>
+    <p>Salasrski vrat</p>
+    <p>Pileca dzigerica</p>
+    <p>Prebranac sa kobasicom</p>
+
+    <h2>Rostilj</h2>
+    <p>Cevapi</p>
+    <p>Pileće belo meso</p>
+    <p>Rolovani pileći ražnjići</p>
+    <p>Pileci batak</p>
+    <p>Rostilj kobasica</p>
+    <p>Rebarca</p>
+    <p>Biftek</p>
+    <p>Svinjski jastucici</p>
+    <p>Vrat sa zara</p>
+    <p>Dimljena vesalica</p>
+    <p>Dimljena pastrmka</p>
+    <p>Dimljeni saran</p>
+
+    <h2>Prilozi</h2>
+    <p>Peceni krompir</p>
+    <p>Grilovano povrce</p>
+
+    <h2>Salate</h2>
+    <p>Sveža sezonska salata</p>
+    <p>Paradajz sa sirom</p>
+    <p>Šopska salata</p>
+    <p>Spanac salata</p>
+    <p>Srpska salata</p>
+    <p>Vitaminska salata</p>
+    <p>Pecena paprika</p>
+    <p>Pecena ljuta</p>
+
+    <h2>Dezerti</h2>
+    <p>Baklava sa orasima</p>
+    <p>Krempita</p>
+    <p>Štenokle</p>
+    <p>Jaffa kolač</p>
+  </main>
+  <footer>
+    <div id="social-icons">
+      <a href="https://www.instagram.com/pajinsalas/" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100009583553617" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+    </div>
+
+    <p>&copy; 2023 Pajin Salaš. All rights reserved.</p>
+    <p>Pratite nas na Instagramu: <a href="https://www.instagram.com/pajinsalas/" target="_blank">@pajinsalas</a></p>
+    <p>Posetite nas na Facebook-u: <a href="https://www.facebook.com/profile.php?id=100009583553617" target="_blank">Pajin Salaš</a></p>
+    <p>Email: <a href="mailto:pajinsalas@gmail.com">pajinsalas@gmail.com</a></p>
+  </footer>
+
+</body>
+
+</html>
